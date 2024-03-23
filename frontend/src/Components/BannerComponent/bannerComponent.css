@@ -1,0 +1,159 @@
+@keyframes moveUpDown1 {
+    0% {
+        transform: translateY(0) rotate(35deg);
+    }
+    50% {
+        transform: translateY(-200px) rotate(35deg) translateX(-20px);
+    }
+    100% {
+        transform: translateY(0) rotate(35deg);
+    }
+}
+
+@keyframes moveUpDown2 {
+    0% {
+        transform: translateY(0) rotate(10deg);
+    }
+    50% {
+        transform: translateY(-140px) rotate(20deg) translateX(-40px) translateZ(30px);
+    }
+    100% {
+        transform: translateY(0) rotate(10deg);
+    }
+}
+
+@keyframes moveUpDown3 {
+    0% {
+        transform: translateY(0) rotate(147deg);
+    }
+    50% {
+        transform: translateY(-190px) rotate(147deg) translateX(-40px) translateZ(-50px);
+    }
+    100% {
+        transform: translateY(0) rotate(147deg) translateZ(-10px);
+    }
+}
+
+@keyframes moveUpDown4 {
+    0% {
+        transform: translateY(0) rotate(-125deg);
+    }
+    50% {
+        transform: translateY(-150px) rotate(50deg) translateX(-50px);
+    }
+    100% {
+        transform: translateY(0) rotate(-125deg);
+    }
+}
+
+
+
+.BannerComponent {
+    position: absolute;
+    width: 100%;
+    height: 753px; 
+    background: var(--primary-color);
+}
+
+.BannerComponent2{
+    position: absolute;
+    width: 100%;
+    height: 383px; 
+    background: var(--primary-color);
+    overflow-y: hidden;
+}
+
+.CircleBackground{
+    position: absolute;
+    width: 17%;
+    height: 16%;
+    background-image: linear-gradient(to right, #46D3A9 100%, #00E1D4 100%);
+    box-shadow: 10px 0 33px #46D3A9, 0px 0 41px #46D3A9, 0px 0 79px #46D3A9, 0px 0 152px #46D3A9;
+    border-radius: 50%;
+    z-index: 1;
+    top: 11%;
+    left: -8%;
+    opacity: 25%;
+    transform: rotate(35deg);
+}
+
+
+
+.CircleBackground1{
+    position: absolute;
+    width: 19%;
+    height: 19%;
+    background-image: linear-gradient(to right, #46D3A9 100%, #00E1D4 100%);
+    box-shadow: 10px 0 33px #46D3A9, 0px 0 41px #46D3A9, 0px 0 79px #46D3A9, 0px 0 152px #46D3A9;
+    border-radius: 50%;
+    z-index: 1;
+    top: 77%;
+    left: -7%;
+    opacity: 25%;
+    transform: rotate(35deg);
+    animation: moveUpDown1 6s ease-in-out infinite;
+}
+
+.CircleBackground2{
+    position: absolute;
+    width: 20%;
+    height: 18%;
+    background-image: linear-gradient(to right, #46D3A9 100%, #00E1D4 100%);
+    box-shadow: 10px 0 33px #46D3A9, 0px 0 41px #46D3A9, 0px 0 79px #46D3A9, 0px 0 152px #46D3A9;
+    border-radius: 50%;
+    z-index: 1;
+    top: 82%;
+    left: 23%;
+    opacity: 25%;
+    transform: rotate(10deg);
+    animation: moveUpDown2 6s ease-in-out infinite;
+
+}
+.rightBanner{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.CircleBackground3{
+    position: absolute;
+    width: 15%;
+    height: 16%;
+    background-image: linear-gradient(to right, #46D3A9 100%, #00E1D4 100%);
+    box-shadow: 10px 0 33px #46D3A9, 0px 0 41px #46D3A9, 0px 0 79px #46D3A9, 0px 0 152px #46D3A9;
+    border-radius: 50%;
+    z-index: 1;
+    top: 53%;
+    right: 593px;
+    opacity: 25%;
+    transform: rotate(147deg);
+    animation: moveUpDown3 8s ease-in-out infinite;
+}
+
+.CircleBackground4{
+    position: absolute;
+    width: 20%;
+    height: 19%;
+    background-image: linear-gradient(to right, #46D3A9 100%, #00E1D4 100%);
+    box-shadow: 10px 0 33px #46D3A9, 0px 0 41px #46D3A9, 0px 0 79px #46D3A9, 0px 0 152px #46D3A9;
+    /* background-image: linear-gradient(to right, #C0BFF1 24%, #9795E8 31%);
+    box-shadow: 10px 0 33px #C0BFF1, 0px 0 41px #C0BFF1, 0px 0 79px #C0BFF1, 0px 0 152px #C0BFF1; */
+    border-radius: 50%;
+    z-index: 1;
+    top: 16%;
+    right: -51px;
+    opacity: 25%;
+    transform: rotate(-125deg);
+    animation: moveUpDown4 8s ease-in-out infinite;
+
+}
+
+@media (min-width:280px) and (max-width:1100px) {
+    .BannerComponent {
+        height: 1112px;
+        overflow-y: hidden;
+    }
+    .CircleBackground4{
+        right: 83px;
+    }
+}

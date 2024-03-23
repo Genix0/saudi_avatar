@@ -1,0 +1,127 @@
+@keyframes moveBackground {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.containerOfSaudi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    padding: 0px 100px;
+    top: 118px;
+}
+.containerOfSaudi2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: -webkit-fill-available;
+    height: 383px;
+    z-index: 1;
+}
+
+.bannerInfo{
+    font-size: 40px;
+    font-weight: 900;
+    width: 100%;
+    color: white;
+}
+.bannerInfo2{
+    color: var(--White-text, #F7F7F7);
+    font-family: Satoshi;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 900;
+}
+.saudiAvatar{
+    width: 620px;
+    height: 620px;
+    padding-left: 56px;
+}
+.buttonInfo{
+    /* padding-right: 19px; */
+    display: grid;
+    gap: 35px;
+}
+.buttonInfo button{
+  margin-top: 30px;
+}
+.banner-p-info{
+    color: #D8D8D8;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    }
+.blur{
+    filter: blur(20px);
+}
+
+@media (min-width:391px) and (max-width:440px) {
+    .containerOfSaudi{
+        flex-direction: column-reverse;
+        padding: 0px 20px;
+        top: 68px;
+    }
+    .saudiAvatar {
+        width: 326px;
+        height: 401px;
+        padding-left: 0px;
+        margin-top: 37px;
+
+    }
+    .bannerInfo {
+        font-size: 25px;
+    }
+}
+@media (min-width:280px) and (max-width:390px) {
+    .containerOfSaudi{
+        flex-direction: column-reverse;
+        padding: 0px 20px;
+        top: 63px;
+    }
+    .saudiAvatar {
+        width: 300px;
+        height: 401px;
+        padding-left: 0px;
+        margin-top: 37px;
+
+    }
+    .bannerInfo {
+        font-size: 25px;
+    }
+}
+@media (min-width:441px) and (max-width:1150px) {
+    .containerOfSaudi{
+        flex-direction: column;
+        padding: 0px 32px;
+        top: 200px;
+        align-items: center;
+    }
+    .saudiAvatar {
+        width: 420px;
+        height: 421px;
+        padding-left: 0px;
+        margin-top: 37px;
+
+    }
+    .bannerInfo {
+        font-size: 25px;
+    }
+}
+@media (min-width:1151px) and (max-width:2000px) {
+    .buttonInfo{
+        width: 50%;
+    }
+}

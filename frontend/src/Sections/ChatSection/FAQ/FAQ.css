@@ -1,0 +1,67 @@
+.FAQ-container{
+    display: flex;
+    border-radius: 12px;
+    background: var(--White-text, #F7F7F7);
+    padding: 20px;
+}
+.FAQ-container img{
+    padding: 3px 9px;
+}
+.line{
+    color: black;
+    /* width: 30px; */
+    padding: 0px 20px;
+}
+.faq-container-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.all-container-faq{
+    display: grid;
+    gap: 20px;
+    width: -webkit-fill-available;
+}
+.display-chat-not{
+    height: 200px;
+    overflow-y: scroll;
+}
+.display-chat-not::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+.display-chat-not::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners of the thumb */
+}
+
+.display-chat-not::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the thumb on hover */
+}
+
+.display-chat-not::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the scrollbar track */
+}
+@media (min-width:800px) and (max-width:1400px) {
+    .FAQ-container img {
+        padding: 13px 12px;
+    }
+}
+@media (min-width:280px) and (max-width:800px) {
+    .FAQ-container img {
+        display: none;
+    }
+    
+    .faq-container-content {
+        flex-direction: column;
+    }
+    .line{
+        display: none;
+    }
+    .FAQ-container {
+        margin-bottom: 20px;
+    }
+    .faq-chatSection {
+        padding-bottom: 14px;
+    }
+}

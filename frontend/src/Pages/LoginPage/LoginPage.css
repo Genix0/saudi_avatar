@@ -1,0 +1,60 @@
+.login-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--primary-color);
+}
+.signin-form2 {
+    width: 531px;
+    border: 1px solid #ffffff4f;
+    margin: auto;
+    border-radius: 20px;
+    padding: 43px;
+}
+.signin-form2 h1{
+    text-align: center;
+    padding-bottom: 24px;
+    color: #ededed;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+}
+.have-acc-p2 a , .rest-p{
+    color: #ededed;
+    text-align: center;
+    font-size: 19px;
+}
+
+.have-acc-p2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.have-acc-p2 {
+    color: #000;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-group22 button{
+    border-radius: 10px;
+    background: var(--white-shade-2, #EDEDED);
+    color: var(--Text-Black, #141522);
+    box-shadow: 0px 25px 36px 0px rgba(114, 84, 200, 0.20), 0px 4px 40px 0px rgba(114, 84, 200, 0.60) inset;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    height: 56px;
+}
+.input-group22 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: -webkit-fill-available;
+}

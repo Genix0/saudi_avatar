@@ -1,0 +1,201 @@
+.paymentCard-container{
+    display: flex;
+    padding: 29.862px 33.816px;
+    flex-direction: column;
+    gap: 29.862px;
+    border-radius: 19.908px;
+    border: 1.244px solid #CFCFCF;
+    background: #7E7CC9;
+    width: -webkit-fill-available;
+}
+.Payment_info_Titles{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.payment-card-subtitle{
+    display: flex;
+    align-items: center;
+}
+.payment-card-subtitle p{
+    color: var(--Text-Black, #141522);
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.title-card-image{
+    display: flex;
+}
+.cardcomponent1-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+}
+.cardcomponent2-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 0fr 1fr;
+    align-items: center;
+    width: -webkit-fill-available;;
+}
+.card2-content{
+    display: flex;
+    flex-direction: column;
+    width: 211px;
+}
+.card-number-p{
+    color: var(--Text-Black, #141522);
+    font-family: "Josefin Sans";
+    font-size: 19.908px;
+    font-style: normal;
+    font-weight: 700;
+}
+.card-number-p2{
+    color: var(--White-text, #F7F7F7);
+    font-family: Rubik;
+    font-size: 14.931px;
+    padding-top: 5px;
+    font-style: normal;
+    font-weight: 400;
+}
+.verification-card1{
+    color: var(--White-text, #F7F7F7);
+    font-family: Rubik;
+    font-size: 14.931px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 10px 5px;
+}
+.input-card-component{
+    display: flex;
+    width: 318.069px;
+    padding: 14.931px 19.908px;
+    align-items: center;
+    border-radius: 9.954px;
+    border: 1.244px solid var(--Border-Grey, #CFCFCF);
+    background: var(--white, #FFF);
+}
+.input-card-component2{
+    display: flex;
+    width: -webkit-fill-available;
+    padding: 22.931px 19.908px;
+    align-items: center;
+    border-radius: 9.954px;
+    border: 1.244px solid var(--Border-Grey, #CFCFCF);
+    background: var(--white, #FFF);
+}
+.input-card-component2-invalid{
+    display: flex;
+    width: 318.069px;
+    padding:  22.931px  19.908px;
+    align-items: center;
+    border-radius: 9.954px;
+    border: 1.244px solid var(--error-color);
+    background: var(--white, #FFF);
+}
+.input-card-component:focus{
+    border-color: var(--Border-Grey);
+}
+.input-card-component-invalid{
+    display: flex;
+    width: 318.069px;
+    padding: 14.931px 19.908px;
+    align-items: center;
+    border-radius: 9.954px;
+    border: 1.244px solid var(--error-color);
+    background: var(--white, #FFF);
+}
+.error-message{
+    border-color: var(--error-color);
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+}
+.invalid{
+    color: var(--error-color);
+
+}
+.component3-conatiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.year_month{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-expire , .input-year , .input-cvv{
+    width: 74px;
+    padding: 22.931px 19.908px;
+    border-radius: 9.954px;
+    border: 1.244px solid var(--Border-Grey, #CFCFCF);
+    background: var(--white, #FFF);
+}
+.year_month p{
+    padding: 0px 20px;
+}
+.img-validation{
+    padding: 10px;
+}
+
+@media (min-width:280px) and (max-width:390px) {
+    .cardcomponent1-container ,.cardcomponent2-container , .component3-conatiner{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .paymentCard-container {
+        padding: 29.862px 30px;
+    }
+    .img-validation{
+        display: none;
+    }
+    .cvv2{
+        padding-top: 17px;
+    }
+    .input-card-component-invalid , .input-card-component , .input-card-component2-invalid , .input-card-component2{
+        width: -webkit-fill-available;
+    }
+}
+@media (min-width:391px) and (max-width:800px) {
+    .cardcomponent1-container ,.cardcomponent2-container , .component3-conatiner{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .paymentCard-container {
+        padding: 29.862px 30px;
+    }
+    .img-validation{
+        display: none;
+    }
+    .cvv2{
+        padding-top: 17px;
+    }
+    .input-card-component-invalid , .input-card-component , .input-card-component2-invalid , .input-card-component2{
+        width: -webkit-fill-available;
+    }
+}
+@media (min-width:801px) and (max-width:1100px) {
+    .cardcomponent1-container ,.cardcomponent2-container , .component3-conatiner{
+        /* flex-direction: column;
+        align-items: flex-start; */
+    }
+    .paymentCard-container {
+        padding: 29.862px 30px;
+    }
+    .img-validation{
+        display: none;
+    }
+    .cvv2{
+        padding-top: 17px;
+    }
+    .input-card-component-invalid , .input-card-component , .input-card-component2-invalid , .input-card-component2{
+        width: -webkit-fill-available;
+    }
+}

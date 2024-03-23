@@ -1,0 +1,296 @@
+.btnAuth {
+    display: flex;
+}
+
+.btnAuth button {
+    font-size: 20px;
+    font-weight: 700;
+    color: #F7F7F7;
+    background: transparent;
+    font-family: 'Josefin Sans', sans-serif !important;
+    cursor: pointer;
+}
+
+.btnAuth_btnmain h2 {
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #F7F7F7;
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+
+.btnAuth_btnmain {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 41%;
+}
+
+.btnAuth-p {
+    padding: 0px 10px;
+    color: #F7F7F7;
+    cursor: pointer;
+}
+
+.btnmain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 60%; */
+    cursor: pointer;
+}
+
+.NotVisible .languageBtn {
+    color: white;
+    font-size: 16px;
+    color: #3d48a6;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 14px 32px;
+    cursor: pointer;
+}
+
+.containerHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+}
+
+.closeButton {
+    display: none;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+/* .btnAuth_btnmain{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 53%;
+} */
+.menuIcon {
+    display: none;
+    /* Hide menu icon by default on larger screens */
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    z-index: 1000;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu.visible {
+    transform: translateY(0);
+    opacity: 1;
+    display: flex;
+    align-items: center;
+}
+
+.menu .loginBtn,
+/* .menu p, */
+.menu .signupBtn,
+.menu .languageBtn {
+    background: var(--primary-color);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    width: -webkit-fill-available;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.closeButton {
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.NotVisible {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    align-items: center;
+}
+
+/* .model-pop {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: var(--Darker-Gray, #929292);
+    padding: 20px;
+    z-index: 1000;
+    width: 39%;
+    height: 59%;
+    overflow-y: auto;
+  } */
+.popup2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    background: var(--Darker-Gray, #929292);
+    padding: 20px;
+    z-index: 1000;
+    width: 34%;
+    height: 61%;
+  }
+  .popup3 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background: #D9D9D9;
+    backdrop-filter: blur(21px);
+    padding: 20px;
+    z-index: 1000;
+    height:80%;
+    width: 93%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .popup .close , .popup2 .close , .popup3 .close{
+    position: absolute;
+    top: 10px;
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    right: 10px;
+    cursor: pointer;
+  }
+
+.blur{
+    filter: blur(5px);
+}
+
+@media (min-width:280px) and (max-width:1100px) {
+    .containerHeader {
+        padding: 30px 20px;
+    }
+
+    .btnAuth_btnmain h2 {
+        display: none;
+    }
+
+    .menuIcon {
+        display: block;
+        color: white;
+        font-size: 35px;
+    }
+
+    .logoContainer img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .menuIcon {
+        display: block;
+        /* Show menu icon on small screens */
+    }
+
+    .NotVisible {
+        display: none;
+    }
+
+    .btnAuth {
+        flex-direction: column;
+        height: 139px;
+        justify-content: space-around;
+        width: -webkit-fill-available;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        /* width: -webkit-fill-available; */
+        width: -webkit-fill-available;
+        height: 103.8vh;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        border-radius: 3px 0px 0px 0px;
+    }
+
+    .menu.visible {
+        background-image: linear-gradient(to bottom, rgba(248, 248, 255, 1), rgba(173, 171, 223, 1));
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+
+    .closeButton {
+        color: var(--primary-color);
+        font-size: 31px;
+        display: block;
+    }
+
+    .slash {
+        display: none;
+    }
+
+    .btnAuth_btnmain {
+        width: -webkit-fill-available;
+    }
+    .popup , .popup2 {
+        width: -webkit-fill-available;
+        position: fixed;
+        top: 50%;
+        align-items: center;
+        left: 5%;
+        display: flex;
+        transform: translate(-3%, -50%);
+        border-radius: 12px;
+        background: var(--Darker-Gray, #929292);
+        padding: 20px;
+        z-index: 1000;
+        height: min-content;
+        justify-content: center;
+    }
+    .popup3{
+        top: 72%;
+        width: -webkit-fill-available;
+        position: fixed;
+        align-items: center;
+        left: 5%;
+        display: flex;
+        transform: translate(-3%, -50%);
+        border-radius: 12px;
+        background: var(--Darker-Gray, #929292);
+        padding: 20px;
+        z-index: 1000;
+        height: min-content;
+        justify-content: center;
+    }
+}

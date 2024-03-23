@@ -1,0 +1,78 @@
+.containerButton {
+    width: 271px;
+    border-radius: 12px;
+    padding: 14px 32px;
+    background: transparent;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    border: 2px solid white;
+}
+.containerButton:hover{
+    background-image: linear-gradient(to right, rgba(126, 124, 201, 1), rgba(86, 163, 199, 1));
+}
+.containerButton:hover{
+    background: var(--blue-color);
+    border: none;
+}
+.SecondaryButton{
+    width: 226px;
+    /* height: 48px; */
+    border-radius: 12px;
+    padding: 14px 32px;
+    background-color: var(--blue-color);
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+.SecondaryButton:hover{
+    background-image: linear-gradient(to right, rgba(126, 124, 201, 1), rgba(86, 163, 199, 1));
+}
+.FooterButton{
+    width: 141px;
+    height: 48px;
+    border-radius: 12px;
+    padding: 14px 32px;
+    background-color: var(--blue-color);
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+.AboutUsbutton{
+    border-radius: 12px;
+    background: var(--primary-color);
+    width: 253px;
+    padding: 14px 32px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+.FreeButton{
+    width: 226px;
+    /* height: 48px; */
+    border-radius: 12px;
+    padding: 14px 32px;
+    background-color:transparent;
+    border: 2px solid  rgba(173, 171, 223, 1);
+    /* border-image: linear-gradient(to right, rgba(248, 248, 255, 1), rgba(173, 171, 223, 1)) 1; */
+    background-clip: content-box, border-box;
+    color: black;
+    border-style: solid;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+@media (min-width:280px) and (max-width:440px) {
+    .FreeButton {
+        font-size: 14px;
+    }
+    .AboutUsbutton {
+        width: 220px;
+    }
+}

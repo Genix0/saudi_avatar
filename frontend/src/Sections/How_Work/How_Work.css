@@ -1,0 +1,16 @@
+.how-Work-container{
+    padding: 50px 100px;
+    height: max-content;
+}
+.workk{
+    display: flex;
+    padding: 50px 100px;
+}
+@media (min-width:280px) and (max-width:700px) {
+    .how-Work-container {
+        padding: 20px 20px;
+    }
+    .workk{
+        padding: 20px 50px;
+    }
+}

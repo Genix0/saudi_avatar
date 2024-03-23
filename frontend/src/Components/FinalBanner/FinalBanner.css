@@ -1,0 +1,11 @@
+.FinalBanner{
+    height: 757px;
+}
+.FinalBanner2{
+    height: 383px;
+}
+@media (min-width:280px) and (max-width:1100px) {
+    .FinalBanner {
+        height: 1145px;
+    }
+}

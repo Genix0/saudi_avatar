@@ -1,0 +1,30 @@
+.allchatcontent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: -webkit-fill-available;
+}
+.saudiImg{
+    width: 578px;
+    height: 400px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.howCanHelp p{
+    color: #000;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+@media (min-width:280px) and (max-width:700px) {
+    .saudiImg{
+        width: -webkit-fill-available;
+    }
+    
+}

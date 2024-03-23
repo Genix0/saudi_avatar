@@ -1,0 +1,122 @@
+.FooterContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--primary-color);
+    padding: 40px 0px 0px;
+}
+
+.FooterLink{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    padding: 30px 0px 0px;
+    cursor: pointer;
+}
+.FooterLink a{
+    padding-right: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.linkscontainer{
+    height: 211px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.CopyRightSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    border-top: 1px solid white;
+    width: 100%;
+}
+.copyRightInfo{
+    padding-right: 100px;
+}
+
+.copyRightInfo p{
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+.socialMediaIcon button{
+    background: transparent;
+    width: 40px;
+    height: 40px;
+}
+.socialMediaIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100px;
+    align-items: center;
+}
+.ContainerTopFooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 129.67px ;
+    background: rgba(244, 245, 255, 0.9) ;
+    width: 85%;
+    border-radius: 8px;
+    position: relative;
+    top: 61px;
+    left: 7%;
+}
+.ContentLeft{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 433.29px;
+}
+.ContentLeft p{
+    color: var(--dark-gray);
+    font-size: 16px ;
+    font-weight: 400;
+    line-height: 21px;
+}
+.ContentLeft h3{
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.ContentLeft img{
+    padding-right: 19px;
+}
+@media (min-width:280px) and (max-width:1100px) {
+    .ContainerTopFooter {
+        width: -webkit-fill-available;
+        left: 0;
+        padding: 20px 10px;
+        display: none;
+        flex-direction: column;
+    }
+    .ContentLeft img{
+        display: none;
+    }
+    .FooterLink {
+        width: -webkit-fill-available;
+        justify-content: space-around;
+    }
+    .imgFooterContainer img{
+        width: 80px;
+        height: 80px;
+    }
+    .CopyRightSection {
+        justify-content: center;
+        padding: 17px 0px;
+        width: -webkit-fill-available;
+    }
+    .copyRightInfo{
+        padding-right: 0px;
+    }
+    .FooterContainer {
+        padding: 0px 0px 0px;
+    }
+}

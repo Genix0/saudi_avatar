@@ -1,0 +1,28 @@
+.coloredText{
+    color: #53A2C9;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.regularText{
+    color: var(--Background-color, #7E7CC9);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.text-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.big-text{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+@media (min-width:1200px)  and (max-width:1600px){
+    .titleContainer {
+        width: 637px;
+    }
+}

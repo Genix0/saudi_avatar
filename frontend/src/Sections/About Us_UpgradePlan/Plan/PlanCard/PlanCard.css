@@ -1,0 +1,37 @@
+.container_Card_Plan{
+    display: flex;
+    width: 388px;
+    padding: 50px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 38px;
+    border-radius: 16px;
+    background: var(--primary-color);
+}
+.AddvanceButton{
+    width: 128px;
+    height: 42px;
+    border-radius: 10px;
+    border: 1px solid #F7F7F7;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+}
+.container_Card_Plan h3{
+    color: var(--White-text, #F7F7F7);
+    font-size: 60px;
+    font-weight: 600;
+    line-height: normal;
+}
+.container_Card_Plan span{
+    color: var(--White-text, #F7F7F7);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: normal;
+}
+@media (min-width:280px) and (max-width:1100px) {
+    .container_Card_Plan {
+        width: -webkit-fill-available;
+    }
+}

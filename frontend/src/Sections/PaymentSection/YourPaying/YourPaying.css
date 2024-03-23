@@ -1,0 +1,55 @@
+.YourPayingContainer{
+    width: 300px;
+}
+.YourPayingP{
+    color: var(--Text-Black, #141522);
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+.YourPayingPrice{
+    color: var(--Text-Black, #141522);
+    font-family: Satoshi;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 900;
+    padding: 20px 0px;
+
+}
+.payment-content-info{
+
+}
+.info-payment p , .info-payment2 p{
+    color: var(--Text-Black, #141522);
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+.info-payment span , .info-payment2 span{
+    color: var(--Text-Black, #141522);
+    /* Regular 20 */
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+.info-payment , .info-payment2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.info-payment{
+    border-bottom: 1px solid var(--Darker-Gray, #929292);
+}
+@media (min-width:280px) and (max-width:1100px){
+    .YourPayingPrice{
+        font-size: 38px;
+    }
+    .YourPayingContainer {
+        width: -webkit-fill-available;
+    }
+}
+
